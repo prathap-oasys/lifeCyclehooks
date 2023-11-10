@@ -1,0 +1,35 @@
+
+<form>
+    <input type="text" name="one" [(ngModel)]="one">
+
+    <button (click)="add()">add</button>
+</form>
+
+
+
+
+
+
+<input type="checkbox" name="check" [(ngModel)]="des">
+
+<div *ngIf="des===true;then success"></div>
+
+<ng-template #success>
+    <app-list [input]="array"></app-list>
+</ng-template>
+<ng-template>
+    <p>Please check the CheckBox</p>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
